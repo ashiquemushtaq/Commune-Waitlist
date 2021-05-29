@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f6f9fe;
+    color: #7c7c7c;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+nav a{
+    text-decoration: none;
+    color: #7c7c7c;
+}
+
+button{
+    color:#ffff;
+    background-color: #372865;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 110px;
+    cursor: pointer;
+}
+
+.nav-bar{
+    padding: 3rem 8rem 3rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ham{
+    display: none;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.banner span{
+    color: #958ab5;
+  }
+  
+.banner{
+    background-color: #372865;
+    padding: 5px 20px 5px 20px;
+    border-radius: 30px;
+    display:inline-block;
+}
+  
+span a{
+    color:#aca1c9;
+  }
+
+.content{
+    padding: 3rem 8rem 3rem 8rem;
+    width: 100%;
+}
+
+h1{
+    color: #353252;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 42px;
+    word-spacing: 2px;
+}
+
+p{
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+input{
+    padding: 14px 25px 14px 25px;
+    border-radius: 5px;
+    border: 1px solid #e3e3e3;
+    outline: none;
+    margin-right: 10px;
+    width: 300px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero{
+    width: 60%;
+}
+
+.wrapper img{
+    width: 270px;
+    height: 300px;
+}
+
+.footer{
+    padding: 3rem 8rem 3rem 8rem;
+}
+
+.footer span{
+    font-weight: 700;
+}
+
+.icons{
+    margin-top: 10px;
+}
+
+.icons img{
+    width: 40px;
+    padding-right: 10px;
+}
+
+@media only screen and (max-width: 980px){
+    
+    nav{
+        display: none;
+    }
+
+    .ham{
+        display: block;
+    }
+
+    .content{
+        text-align: center;
+    }
+    
+    .wrapper img{
+        display: none;
+    }
+
+    .hero{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 710px){
+    
+    .nav-bar{
+        padding: 1.5rem 3rem 1.5rem 3rem;
+    }
+    
+    input{
+        width: 100%;
+    }
+
+    .content{
+        padding: 1.5rem 3rem 1.5rem 3rem;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    .banner{
+        padding: 5px 10px 5px 10px;
+    }
+
+    .hero button{
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    .footer{
+        padding: 1.5rem 3rem 1.5rem 3rem;
+        text-align: center;
+    }
+
+    .footer img{
+        width: 50px;
+    }
+}
